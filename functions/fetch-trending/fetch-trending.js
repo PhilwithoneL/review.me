@@ -21,7 +21,7 @@ const handler = async (event) => {
     return {
       statusCode: 200,
       header: {
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "no-cors"
       },
       body: JSON.stringify(data)
     }
@@ -31,7 +31,7 @@ const handler = async (event) => {
     return {
       statusCode: 500,
       header: {
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "no-cors"
       },
       body: JSON.stringify({
         error: error.message
