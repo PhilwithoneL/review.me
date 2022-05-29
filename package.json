@@ -4,6 +4,7 @@
     },
     "scripts": {
         "dev": "http-server src -p 8888",
+        "production": "https://629375870b6966466d578273--cool-pie-42ee74.netlify.app",
         "netlify": "./node_modules/.bin/netlify"
     },
     "dependencies": {
