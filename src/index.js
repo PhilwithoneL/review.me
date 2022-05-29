@@ -1,3 +1,5 @@
+
+
 //Variables
 
 let searchCount = 0;
@@ -24,7 +26,7 @@ const trendingApiCall = async (media,time) => {
     fetch(`/.netlify/functions/fetch-trending?media=${m}&time=${t}`)
         .then(res => {console.log(response.json())})
     
-    await fetch(`http://localhost:8888/.netlify/functions/fetch-trending?media=${m}&time=${t}`)
+    await fetch(`/.netlify/functions/fetch-trending?media=${m}&time=${t}`)
 
     
     .then(res => res.json())
@@ -66,7 +68,7 @@ const trailerApiCall = async (i) => {
     fetch(`/.netlify/functions/fetch-trailers?id=${i}`)
         .then(res => {console.log(response.json())})
 
-    await fetch(`http://localhost:8888/.netlify/functions/fetch-trailers?id=${i}`)
+    await fetch(`/.netlify/functions/fetch-trailers?id=${i}`)
 
 
     .then(res => res.json())
@@ -129,7 +131,7 @@ const upcomingMovieApiCall = async () => {
     fetch(`/.netlify/functions/fetch-upcoming`)
         .then(res => {console.log(response.json())})
     
-    await fetch(`http://localhost:8888/.netlify/functions/fetch-upcoming`)
+    await fetch(`/.netlify/functions/fetch-upcoming`)
 
     .then(res => res.json())
     .then(data => upcomingData = data)

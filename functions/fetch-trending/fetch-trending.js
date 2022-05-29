@@ -1,8 +1,4 @@
-
 const axios = require('axios');
-let cors = require("cors");
-app.use(cors());
-
 require('dotenv').config({})
 
 
@@ -23,7 +19,7 @@ const handler = async (event) => {
     return {
       statusCode: 200,
       header: {
-        "Access-Control-Allow-Origin": "no-cors"
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify(data)
     }
@@ -33,7 +29,7 @@ const handler = async (event) => {
     return {
       statusCode: 500,
       header: {
-        "Access-Control-Allow-Origin": "no-cors"
+        "Access-Control-Allow-Origin": "*"
       },
       body: JSON.stringify({
         error: error.message
