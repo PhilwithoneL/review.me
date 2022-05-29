@@ -1,0 +1,288 @@
+@media only screen and (max-width: 992px) {
+
+
+}
+
+@media only screen and (max-width: 761px) {
+
+
+}
+
+@media only screen and (max-width: 722px) {
+
+    .search-bar input[type="text"] {
+
+        font-size: 16px;
+        transform:translate(50px, 6px);
+    
+        &::placeholder {
+            font-size: 16px;
+        }
+        
+    } 
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 641px) {
+
+    .nav-search-container {
+        display:none;
+    }
+    
+    .nav-search-container-mobile {
+        display:block;
+        position:absolute;
+ 
+    }
+
+    //Search
+
+    .nav-search-icon-mobile {
+        font-size: 18px;
+        width:100vw;
+        height:100px;
+        transform:translate(-25px, 11px);
+        padding-right:20px;
+    }
+
+    .mobile-search-container {
+        position:absolute;
+    }
+
+    .nav-search-bar-mobile {
+        color: black;
+        background-color: white;
+        height:50px;
+        width:150vw;
+        margin: none;
+        position: fixed;
+        top: 55px;
+        left:-20px;
+
+    }
+
+    .drop-down-search-icon {
+        font-size: 22px;
+        transform:translate(37px, 10px);
+        color:#23252c;
+        z-index:200;
+    }
+
+    .nav-search-bar-mobile input[type="text"] {
+        transform:translate(75px,-20px);
+        width:60%;
+        color:black;
+        border-style: none;
+
+        &:focus {
+            outline:none;
+            border-style:none;
+        }
+        
+    }
+
+    .search-mobile-close {
+        font-size: 22px;
+        transform:translateY(1px);
+    }
+
+    .search-bar input[type="text"] {
+
+        font-size: 14px;
+        transform:translate(50px, 6px);
+    
+        &::placeholder {
+            font-size: 14px;
+        }
+        
+    } 
+
+    .search-container {
+        z-index: 2;
+        top: 300px;
+        position:absolute;
+        margin:none;
+        height:200px;
+        justify-content: left;
+        align-content: center;
+        width:100%;
+    }
+
+    .search-bar {   
+        transform:translateX(40px);
+        width: 90%;
+        height: 50px;
+        border-radius: 25px;
+        background-color: white;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 575px) {
+
+    .scroll-section {
+        margin: 0px 0px 10px 10px;
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 497px) {
+    .header-sub {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+
+}
+
+
+@media only screen and (max-width: 446px) {
+
+    .footer-links {
+
+        top:25px;
+
+        ul {
+    
+            li {
+                font-size: 10px;
+            }
+    
+            h1 {
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 432px) {
+
+}
+
+@media only screen and (max-width: 410px) {
+
+    .nav-links {
+        display:none;
+    }
+
+    .mobile-links-container {
+
+        z-index:210;
+
+        &:hover .mobile-links-drop-down {
+            display:block;
+            height:1000px;
+            opacity: 100%;
+        }
+    }
+
+    .mobile-links {
+        display: block;
+        margin: 8px 15px 10px;
+        font-size:20px;
+
+        &:hover {
+            color:grey;
+        }
+    }
+
+    .logo {
+        transform:translateX(60px);
+    
+        &:after {
+            content: none;
+        }
+    }
+
+    .mobile-links-drop-down {
+        display:none;
+        right:0px;
+        width:100vw;
+        height:1px;
+        background-color: #23252c;
+        position:absolute;
+        transition: all 2s ease-in-out;
+        opacity: 0%;
+
+        animation: mobile-nav-slide 0.2s ease-in-out;
+
+    }
+
+    @keyframes mobile-nav-slide {
+        from {transform:translateX(-100vw);}
+        to {transform:translateX(0vw);}
+    }
+
+    .drop-down-link {
+        margin:20px;
+    
+    }
+
+    .mobile-link-header {
+        font-size:24px;
+        margin:20px;
+        padding-bottom: 10px;
+
+        border-bottom: 1px solid white;
+
+    }
+
+}
+
+@media only screen and (max-width: 368px) {
+
+    .logo {
+        transform: translateX(40px);
+    }
+
+    .footer-links {
+
+        top:25px;
+
+        ul {
+    
+            li {
+                font-size: 8px;
+            }
+    
+            h1 {
+                font-size: 10px;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 332px) {
+
+    .logo {
+        transform: translateX(22px);
+    }
+    
+    .logo-footer {
+        transform:translateY(30px);
+        font-size: 20px;
+        height: 70px;
+    
+        &:after {
+            content: "";
+            background: white;
+            position: relative;
+            top: -18px;
+            left: 20px;
+            height: 100%;
+            width: 1px; 
+        }
+    }
+
+}

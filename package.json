@@ -1,0 +1,19 @@
+{
+    "devDependencies": {
+        "netlify-cli": "^10.3.3"
+    },
+    "scripts": {
+        "dev": "http-server src -p 8888",
+        "netlify": "./node_modules/.bin/netlify"
+    },
+    "dependencies": {
+        "axios": "^0.26.1",
+        "concurrently": "^7.2.1",
+        "dotenv": "^16.0.1",
+        "dotenv-webpack": "^7.1.0",
+        "http-server": "^14.1.0",
+        "webpack": "^5.72.1",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.9.0"
+    }
+}
