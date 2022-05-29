@@ -9,6 +9,7 @@
     "dependencies": {
         "axios": "^0.26.1",
         "concurrently": "^7.2.1",
+        "cors": "^2.8.5",
         "dotenv": "^16.0.1",
         "dotenv-webpack": "^7.1.0",
         "http-server": "^14.1.0",

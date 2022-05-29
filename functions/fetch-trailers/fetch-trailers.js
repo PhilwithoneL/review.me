@@ -1,5 +1,7 @@
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
 const axios = require('axios');
+let cors = require("cors");
+app.use(cors());
 
 require("dotenv").config();
 

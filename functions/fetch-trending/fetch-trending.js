@@ -1,5 +1,7 @@
 
 const axios = require('axios');
+let cors = require("cors");
+app.use(cors());
 
 require('dotenv').config({})
 
